@@ -1,4 +1,4 @@
-FROM python:3
+FROM python:3.11-slim
 RUN pip3 install django==3.2
 COPY . .
 RUN python3 manage.py migrate
